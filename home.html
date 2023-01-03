@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+{%  load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Railway </title>
+     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
+</head>
+
+
+<body>
+
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  font-size: 30px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+  .gfg {
+
+            position: relative;
+        }
+
+        .first-txt {
+            position: absolute;
+            top: 40%;
+            left: 10%;
+            color: red;
+            font-size: 80px;
+        }
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+marquee {
+  font-size: xx-large;
+}
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: arial, tahoma;
+  font-size: 10px;
+  color: #fff;
+  text-transform: capitalize;
+}
+footer {
+  width: auto;
+  background-color: #333;
+  padding: 0 160px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+p {
+  line-height: 180%;
+  color: #a29e9e;
+}
+h6,
+div {
+  margin-bottom: 20px;
+}
+h6 {
+  margin-top: 25px;
+  font-size: 12px;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+footer div .one {
+  margin-bottom: 20px;
+  text-transform: none;
+}
+footer .details {
+  display: flex;
+  flex-wrap: wrap;
+}
+footer .details div {
+  width: 150px;
+  margin-right: 20px;
+}
+footer .details div p {
+  text-transform: uppercase;
+}
+footer .details div span {
+  margin-bottom: 20px;
+}
+footer .contact {
+  width: 340px;
+}
+footer .information {
+  margin-right: 20px;
+}
+footer .information p {
+  margin-bottom: 8px;
+}
+footer .account p {
+  margin-bottom: 8px;
+  width: 150px;
+}
+footer .newsletter p,
+input {
+  padding: 5px;
+}
+footer .newsletter input {
+  width: 170px;
+  margin-bottom: 20px;
+  border-style: none;
+  background-color: #4d4d4d;
+  color: #a29e9e;
+}
+footer .newsletter input::placeholder {
+  color: #a29e9e;
+  font-size: 10px;
+}
+footer .newsletter button {
+  padding: 7px 12px;
+  margin-left: 4px;
+  color: #fff;
+  background-color: #f00;
+  font-size: 10px;
+  border-style: none;
+}
+footer .newsletter a {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px;
+}
+footer .newsletter a:first-of-type {
+  background-color: #4267b2;
+}
+footer .newsletter a:nth-of-type(2) {
+  background-color: #1da1f2;
+}
+footer .newsletter a:nth-of-type(3) {
+  background-color: #f00;
+}
+footer .newsletter a:nth-of-type(4) {
+  background-color: #8a50ca;
+}
+
+footer .newsletter a:last-of-type {
+  background-color: #eeaa2f;
+  color: #333;
+}
+a:hover {
+  color: rgba(0, 0, 0, 0.3);
+  transform: scale(1.3);
+  transition: all 0.2s ease-in-out;
+}
+/* start media footer */
+@media (max-width: 767px) {
+  footer {
+    padding: 15px 30px;
+    justify-content: initial;
+  }
+  footer .information {
+    width: 120px;
+  }
+  footer .account {
+    width: 120px;
+  }
+}
+/* end media footer */
+.footer-2 {
+  width: 100%;
+  height: 45px;
+  padding: 15px 180px;
+  background-color: #252121;
+  position: relative;
+}
+.footer-2 p {
+  color: gray;
+  display: inline-block;
+  position: absolute;
+  top: 15px;
+}
+.footer-2 p span {
+  color: #fff;
+}
+.footer-2 .icons {
+  float: right;
+}
+.footer-2 a {
+  display: inline-block;
+  margin-right: 4px;
+}
+.footer-2 a:first-of-type {
+  background-color: #31abea;
+  color: #fff;
+}
+.footer-2 a:nth-of-type(2) {
+  background-color: #14226b;
+  color: #fff;
+}
+.footer-2 a:nth-of-type(3) {
+  background-color: #31abea;
+  color: #fff;
+}
+.footer-2 a:nth-of-type(4) {
+  background-color: orange;
+  color: #fff;
+}
+.footer-2 a:last-of-type {
+  background-color: #31abea;
+  color: #fff;
+}
+/* start media footer-2 */
+@media (max-width: 767px) {
+  .footer-2 {
+    padding: 5px 20px;
+    height: 80px;
+  }
+  .footer-2 p {
+    padding: 5px 15px;
+    float: none;
+    position: static;
+  }
+  .footer-2 .icons {
+    padding: 5px 15px;
+    float: none;
+  }
+}
+/* end media footer-2 */
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+<ul>
+
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="https://r.search.yahoo.com/_ylt=Awrx_4l4jLBjIK4G3uK7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Nj/RV=2/RE=1672543481/RO=10/RU=https%3a%2f%2fwww.livemint.com%2fnews%2findia%2fmumbai-local-western-central-railway-to-run-special-trains-on-new-year-eve-see-timing-route-here-11672449307173.html/RK=2/RS=9CvcwtfoyaAH7sZjGJ1Ti.OyJbg-">News</a></li>
+  <li><a href="https://www.mapsofindia.com/mumbai/localities/">About</a></li>
+     <li><a class="button" href="{% url 'login' %}">Login</a></li>
+     <li><a class="button" href="{% url 'sign_up' %}">Register</a></li>
+
+
+</ul>
+
+<div  class="gfg">
+    <img src="{% static 'images/home3.jpg' %}"  width="100%" height="800px"       >
+
+    <h1 class="first-txt">Welcome to Indian Rilway System</h1>
+
+</div> <br><br>
+
+<marquee behavior=" alternate" direction=" right"  bgcolor="Tomato" font-size="50px"; font-weight="800";>
+    Here are the stations on Mumbai Central
+    line: MumbaiCST MasjidBunder, SandhurstRoad, Byculla, Chinchpokli, CurreyRoad, Parel, Dadar, Matunga, Sion, Kurla, Vidyavihar,
+    Ghatkopar, Vikhroli, Kanjurmarg, Bhandup, Nahur, Mulund, Thane, Kalwa, Mumbra, Diwa, Kopar, Dombivli, Thakurli, Kalyan, Vithalwadi,
+    Ulhasnagar, Ambarnath, Badlapur, Vangani, Shelu, Neral, BhivpuriRoad, Karjat, Palasdari, Kelavli, Dolavli, Lowjee, Khopoli, Shahad,
+    Ambivli, Titwala, Khadavli, Vasind, Asangaon, Atgaon, Khardi and Kasara.</marquee> <br><br>
+
+  </div>
+</div>
+
+<center>
+<video width="90%" height="50%"
+        src="https://www.shutterstock.com/shutterstock/videos/1031240654/preview/stock-footage-a-regional-train-from-elche-leaves-the-spanish-train-station-torrellano-towards-alicante-the.webm" controls>Train</video>
+
+
+</center><br><br><hr>
+
+
+
+
+<footer>
+    <div class="contact">
+      <h6>contact us</h6>
+      <p class="one">Hi, we are always open for cooperation and suggestions,<br> contact us in one of the ways below</p>
+      <div class="details">
+        <div>
+          <p>phone number</p>
+          <span><a href="">123456789 </a></span>
+        </div>
+        <div>
+          <p>email address</p>
+          <span><a href=""> us@example.com</a></span>
+        </div>
+        <div>
+          <p>our location</p>
+          <span>751 Fake Street,Navi Mumbai<br> 10021 Mumbai</span>
+        </div>
+        <div>
+          <p>working hours</p>
+          <span>Mon-Sat 10.00am-7.00pm</span>
+        </div>
+      </div>
+    </div>
+    <div class="information">
+      <h6>information</h6>
+      <p>about us</p>
+      <p>delivery information</p>
+      <p>privacy policy</p>
+      <p>brands</p>
+      <p>contact us</p>
+      <p>returns</p>
+      <p>site map</p>
+    </div>
+    <div class="account">
+      <h6>my account</h6>
+      <p>store location</p>
+      <p>order history</p>
+      <p>wish list</p>
+      <p>newsletter</p>
+      <p>special offers</p>
+      <p>gift certificates</p>
+      <p>affiliate</p>
+    </div>
+    <div class="newsletter">
+      <h6>newsletter</h6>
+      <p>enter your email address below to subscribe to our newsletter<br>
+      and keep up to date with discounts and special offers</p>
+      <input type="email" name="email" placeholder="user@example.com">
+      <button>Subscribe</button>
+      <p>follow us on social networks</p>
+      <a href=""><i class="fab fa-facebook-f"></i></a>
+      <a href=""><i class="fab fa-twitter"></i></a>
+      <a href=""><i class="fab fa-youtube"></i></a>
+      <a href=""><i class="fab fa-instagram"></i></a>
+      <a href=""><i class="fas fa-rss"></i></a>
+    </div>
+  </footer>
+  <div class="footer-2">
+    <p>Powered by <span>khushisingh</span></p>
+    <div class="icons">
+      <a href=""><i class="fab fa-cc-paypal" style="font-size:20px;"></i></a>
+      <a href=""><i class="fab fa-cc-visa" style="font-size:20px;"></i></a>
+      <a href=""><i class="fab fa-cc-amex" style="font-size:20px;"></i></a>
+      <a href=""><i class="fab fa-cc-mastercard" style="font-size:20px;"></i></a>
+      <a href=""><i class="fab fa-cc-mastercard" style="font-size:20px;"></i></a>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
